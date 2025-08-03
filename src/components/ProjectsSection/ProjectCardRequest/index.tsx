@@ -1,6 +1,3 @@
-import { username } from "../../../data/user";
-import { username_request } from "../../../data/user_request";
-import { apiUrl } from "../../../data/api"
 import { useEffect, useState } from "react";
 import { projects } from "../../../data/projects";
 import giticon from "../../../assets/git-icon.png";
@@ -16,6 +13,9 @@ export const ProjectCardRequest = () => {
     useEffect(() => {
         try {
             /* construindo o url da API */
+            const apiUrl = import.meta.env.VITE_API_BASE_URL;
+            const username_request = import.meta.env.VITE_USERNAME_REQUEST;
+
             const url = `${apiUrl}/${username_request}/repos`;
 
             /* fazendo a requisicao da API */
