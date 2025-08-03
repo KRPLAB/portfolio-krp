@@ -1,0 +1,38 @@
+.techSection {
+    width: 100%;
+    margin-bottom: 3.75rem;
+}
+
+.techSection ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.techCard {
+    display: flex;
+    align-items: center;
+    width: 17.9375rem;
+    height: 5.375rem;
+    margin-top: 1rem;
+    border-radius: var(--radius-1);
+    border: 1pt solid var(--color-white-opacity);
+    padding-left: var(--gap-2);
+}
+
+.techCard img {
+    margin-right: var(--gap-1);
+    padding: 0 .25rem;
+}
+
+@media (max-width: 725px) {
+    .techSection {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .techCard {
+        width: 20.75rem;
+    }
+}

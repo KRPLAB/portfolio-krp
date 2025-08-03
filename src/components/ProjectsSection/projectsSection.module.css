@@ -1,0 +1,58 @@
+.projectsSection {
+    width: 100%;
+    margin-bottom: 3.75rem;
+}
+
+.projects__ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 27.4375rem;
+    height: 11.4375rem;
+    margin-top: 1rem;
+    padding: var(--gap-1);
+    border-radius: var(--radius-1);
+    border: 1pt solid var(--color-white-opacity);
+}
+
+.projectCardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.projectCard-header img {
+    position: absolute;
+    left: 22.3125rem;
+    bottom: 1;
+}
+
+.projectCard h3 {
+    width: 15rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media (max-width: 725px) {
+    .projectsSection {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .projectCard {
+        width: 20.75rem;
+        height: 12.5rem;
+    }
+}
